@@ -1,0 +1,647 @@
+Choosing the Right EC2 Instance for Workload
+Connecting via SSH 
+Connecting via Session Manager 
+Connecting via EC2 Instance Connect
+Ec2 Behaviours: -Stopping, Starting, Rebooting, Terminating Instances
+Changing Instance Type (Scale Up / Down)
+Working with EC2 User Data and Metadata
+Automating Configuration via Cloud-Init
+Using Instance Store Volumes (demo to show data is lost)
+Attaching Multiple Volumes to One Instance
+How to recover Ec2 if Key is Lost 
+EC2 Security Group Deep Dive
+Using Network ACLs with EC2
+Restricting SSH Access with IAM Policies
+Assigning Elastic Network Interfaces (ENIs)
+Attaching Multiple ENIs to One Instance
+Using Bastion Host / Jump Server
+EC2 Reachability Analyzer Demo
+EC2 Placement Groups (Cluster, Spread, Partition)
+EC2 Dedicated Host vs Dedicated Instance
+Create Ec2 with Spot Instances
+EC2 Hibernate Feature Demo
+EC2 Instance Recovery from System Status Failures
+EC2 Access to S3 (IAM Role + CLI Demo)
+EC2 Access to DynamoDB
+EC2 with CloudWatch Metrics & Logs
+EC2 with CloudTrail (Activity Tracking)
+EC2 Backup via Data Lifecycle Manager
+EC2 with Systems Manager Automation Documents
+EC2 with AWS Backup
+EC2 with CloudFormation Template
+EC2 with AWS Secrets Manager
+Demo of Compute Optimizer
+Monitoring EC2 Performance Metrics
+Using AWS Systems Manager Run Command
+Common EC2 Connection Issues & Fixes
+Testing EC2 Recovery Scenarios
+Host a Static Website on EC2 (Apache)
+High Availability Web App with ALB + ASG + EC2
+EC2 Scheduled Start/Stop Automation
+Multi-Tier App on EC2 (Web + DB Layer)
+Amazon Machine Image (AMI)
+Customize Amazon Machine Image (AMI) (Hands-On)
+Termination Protection
+EC2 Instance Placement Group
+
+
+EBS Playlist: - 
+
+Introduction to Amazon EBS – Overview & Use Cases
+EBS Volume Types – General Purpose (gp3/gp2), Provisioned IOPS (io2/io1), Throughput Optimized HDD, Cold HDD
+EBS Snapshot Lifecycle – Scheduling and Automation
+EBS Encryption – At Rest and In Transit
+EBS Volume Resizing – Increase Volume Size Without Downtime
+EBS Volume Performance – IOPS, Throughput, and Best Practices
+EBS Multi-Attach – Using Volumes Across Multiple EC2 Instances
+EBS Backup & Restore – Integration with AWS Backup
+EBS Optimization – Cost and Performance Tuning
+EBS Snapshots – Cross-Region and Cross-Account Copy
+
+Elastic IP: - 
+
+Assigning Public vs Private IPs
+Attaching / Releasing Elastic IPs
+Transfer IP to another AWS Account
+Using Elastic IP with Load Balancer
+Elastic IP Failover Scenario (Primary/Secondary Instance)
+Troubleshooting Elastic IP Connectivity Issues
+Elastic IP Cost Optimization Tips
+
+Load Balancer Series: - 
+
+Introduction to AWS Load Balancers – Overview & Use Cases
+Classic Load Balancer (CLB) – Overview and Demo
+Application Load Balancer (ALB) – Overview and Use Cases
+Network Load Balancer (NLB) – Overview and Use Cases
+ALB Listener and Target Groups – Configuration Demo
+NLB Listener and Target Groups – Configuration Demo
+Cross-Zone Load Balancing – ALB and NLB
+Sticky Sessions (Session Affinity) – Configuration Demo
+SSL/TLS Termination at Load Balancer
+Health Checks – Configuring ALB/NLB Health Checks
+Path-Based Routing with ALB
+Host-Based Routing with ALB
+Integration with Auto Scaling Groups
+Load Balancer Logging – Access Logs and Monitoring
+Real-World Project: Deploying Highly Available Web Application with ALB
+Real-World Project: Hybrid Architecture with NLB and ALB
+Introduction Of Load Balancer
+Load Balancer Terminology
+Implementation Load Balancer Part 1 - VPC Design (Hands-On)
+Implementation Load Balancer Part 2 - SG Design (Hands-On)
+Implementation Load Balancer Part 3 - Application Load Balancer
+Path-based routing Vs Host-Based Routing Balancer (Hands-On)
+Application Load Balancer Path Based Routing (Hands-On)
+Application Load Balancer Host Based Routing (Hands-On)
+Network Load Balancer
+Network Load Balancer (Hands-On)
+Cross-Zone Load Balancing (Hands-On)
+Gateway Load Balancer
+VPC Ingress Routing For Gateway Load Balancer
+VPC Ingress Routing For Gateway Load Balancer (Hands-On)
+Gateway Load Balancer Practical Part 1
+Gateway Load Balancer Practical Part 2
+Gateway Load Balancer Practical Part 3 (Hands-On)
+Classic Load Balancer
+
+AMI: - 
+
+Introduction to Amazon Machine Images (AMI) – Overview & Use Cases
+Creating Custom AMI from Existing EC2 Instance
+Sharing AMI Across Accounts – Permissions & Security
+Using AWS Marketplace AMIs – Selection and Deployment
+Updating AMI – Best Practices
+Automated AMI Creation with EC2 Image Builder
+Launching EC2 Instances from AMI – Step by Step Demo
+AMI Lifecycle Management – Cleaning Up Old AMIs
+Encrypting AMI – Security Best Practices
+
+Auto Scaling group : - 
+
+Amazon EC2 Auto Scaling Overview
+Auto Scaling Group Components
+Creating an Auto Scaling Group (Console)
+Launch Template
+Setting Desired Capacity, Min, and Max Instances
+Deploying Auto Scaling Across Multiple Availability Zones
+Integrating Auto Scaling with Application Load Balancer (ALB)
+Integrating Auto Scaling with Network Load Balancer (NLB)
+Health Checks in Auto Scaling
+Scaling Policies Overview
+Dynamic Scaling Based on Metrics
+Scheduled Scaling
+Mixed Instances Policy
+Protecting Instances from Scale-In
+Lifecycle Hooks
+Blue/Green Deployment with Auto Scaling
+Canary Deployment Using Auto Scaling
+Monitoring and Notifications
+Automated Replacement of Unhealthy Instances
+Cost Optimization Techniques for Auto Scaling
+Troubleshooting Common Auto Scaling Issues
+Cross-Region Auto Scaling Setup & Failover Strategies
+Auto Scaling Integration with ECS (EC2-backed Containers)
+Real-World Project: Scalable Web Application with Auto Scaling
+Real-World Project: Handling Sudden Traffic Spikes with Dynamic Scaling
+Exam Scenario: Choosing the Right Scaling Policy & Auto Scaling Architecture
+Scaling Option Manual Scaling (Hands-On)
+Scaling Option Schedule Scaling (Hands-On)
+Scaling Option Dynamic Scaling (Hands-On)
+Scaling Options Predictive Scaling II Introduction & Configuration (Hands-On)
+Auto Scaling II Instance Maintenance Policy (Hands-On)
+Auto Scaling II Default Termination Policy (Hands-On)
+Auto Scaling II Built-in Termination Policies (Hands-On)
+Auto Scaling II Custom Termination Policies (Hands-On)
+Auto Scaling II Types Of Timers
+Difference Between AWS Auto Scaling Vs Elastic Load Balancer
+
+IAM Playlist : - 
+
+Introduction to AWS IAM – Overview & Benefits
+IAM Users – Creating and Managing Users
+IAM Groups – Creating and Managing Groups
+IAM Roles – Creating and Assigning Roles
+IAM Policies – Overview and Structure
+Attaching Managed Policies to Users, Groups, and Roles
+Creating Custom Policies (JSON-based)
+IAM Policy Simulator – Testing Permissions
+AWS Managed vs Customer Managed Policies
+Identity Federation – Accessing AWS with External Identity Providers
+Cross-Account Access with IAM Roles
+Service-Linked Roles – Overview and Examples
+EC2 Instance Role – Accessing S3 and Other Services
+Temporary Security Credentials with STS
+AWS Organizations – Centralized IAM Management
+SCPs (Service Control Policies) – Restricting Accounts
+IAM Access Analyzer – Finding Unintended Access
+Permissions Boundaries – Limiting Roles
+Logging and Auditing IAM Activities with CloudTrail
+Tag-Based Access Control – IAM Policies with Tags
+Integrating IAM with AWS CLI and SDKs
+Troubleshooting Common IAM Permission Issues
+Real-World Project: S3 Access Control with IAM Policies
+Real-World Project: Multi-Account Access with Cross-Account Roles
+Exam Scenario: Designing Secure IAM Architecture
+
+S3 Playlist: - 
+
+Introduction to Amazon S3 – Overview & Use Cases
+S3 Buckets – Creating and Configuring Buckets
+S3 Object Storage – Uploading and Downloading Files
+S3 Object Operations – Copy, Move, Delete
+Versioning in S3 – Enabling and Managing Versions
+S3 Object Lock – Governance and Compliance Mode
+S3 Storage Classes – Standard, Intelligent-Tiering, Glacier, Glacier Deep Archive
+S3 Lifecycle Policies – Transition and Expiration Rules
+S3 Replication – Cross-Region and Same-Region
+S3 Access Control – Bucket Policies
+S3 Access Control – IAM Policies for S3
+S3 Access Control – ACLs (Access Control Lists)
+S3 Pre-Signed URLs – Secure Temporary Access to Objects
+S3 Static Website Hosting – Setup and Demo
+S3 Event Notifications – Trigger Lambda, SQS, SNS
+S3 Logging and Monitoring – CloudTrail & CloudWatch
+S3 Encryption – Server-Side (SSE-S3, SSE-KMS, SSE-C)
+S3 Public Access Settings – Block Public Access Configuration
+S3 Transfer Acceleration – Speeding Up Uploads/Downloads
+S3 Multipart Upload – Large Object Upload Demo
+S3 Select – Querying Objects with SQL
+S3 Batch Operations – Performing Bulk Operations on Objects
+S3 Cost Optimization – Storage Class Analysis & Intelligent Tiering
+S3 Cross-Origin Resource Sharing (CORS) – Setup and Demo
+S3 Tags – Organizing Buckets and Objects
+S3 Inventory Reports – Tracking Objects and Storage Usage
+S3 Glacier Restore – Restoring Archived Objects
+Real-World Project: Hosting Static Website on S3
+Real-World Project: Backup & Archival Solution Using S3 + Lifecycle
+Real-World Project: Cross-Region Disaster Recovery Using S3 Replication
+Real-World Project: Secure File Sharing Using Pre-Signed URLs
+Exam Scenario: Designing S3 Architecture for Performance, Security & Cost
+ S3 Express One Zone
+ S3 Archive And Backup Storage Class
+AWS S3 Static Web Hosting With Route 53 (Hands-On)
+AWS S3 Cross-Origin Resource Sharing (CORS) (Hands-On)
+AWS S3 Server Access Logging
+AWS S3 CloudTrail Data Events
+AWS S3 Requester Pays
+AWS S3 Presigned URL
+AWS S3 Multi Factor Authentication (MFA) Delete
+AWS S3 Event Notification
+AWS S3 Multipart Upload (Hands-On)
+AWS SA Access Point Theory
+AWS S3 Access Point (Hands-On)
+
+
+EFS (Elastic File System)
+
+Introduction to Amazon EFS – Overview & Use Cases
+EFS File Systems – Creating and Configuring
+EFS Performance Modes – General Purpose vs Max I/O
+EFS Throughput Modes – Bursting vs Provisioned
+Mounting EFS on EC2 – Linux Demo
+Mounting EFS on EC2 – Windows Demo
+EFS Access Points – Overview and Demo
+EFS Encryption – At Rest and In Transit
+EFS Lifecycle Management – Transition to Infrequent Access
+EFS Backup and Restore – Integration with AWS Backup
+Real-World Project: Shared File Storage for Web Application
+
+ VPC (Virtual Private Cloud)
+ 
+Introduction Of Virtual Private Cloud (VPC)
+How To Create VPC Part 1 (Live Hands-On)
+How To Create VPC II Subnets Part 2 ( Hands-On)
+How To Create VPC II Internet Gateway & Route Table Part 3 (Hands-On)
+How To Create VPC II VPC 2-Tire Architecture Part 4
+How To Create VPC I Create Public Subnet And Private Subnet Part 5 Hands-On
+How To Create VPC II Public Subnet And Private Subnet Part 6 (Hands-On)
+How To Create VPC II NAT Gateway Part 7 (Hand-on)
+How To Create VPC II Summary To 7
+VPC Peering Connection (Hands-on)
+VPC Access Control List (ACL) (Hands-On)
+Security Group V/S Access Control List (Hands-on)
+Stateless Vs Stateful
+Class Note For Section 5 - Virtual Private Cloud VPC
+Virtual Private Network (VPN)
+Virtual Private Network (VPN) (Hands-On)
+AWS Direct Connect (Hands-On)
+VPC Transit Gateway
+VPC Transit Gateway (Hands-on)
+VPC Endpoint
+VPC Endpoint Services - Private Link (Hands-On)
+DHCP Option Sets (Hands-On)
+VPC Flow Log (Hands-on)
+Managed Prefix List Part 1 (Hands-On)
+Managed Prefix List Part 2 (Hands-On)
+Class Note For Section 5 - Virtual Private Network VPN
+
+Lambda (Serverless Compute)
+Introduction to AWS Lambda – Overview & Use Cases
+Creating Your First Lambda Function
+Invoking Lambda – Console, CLI, SDK
+Lambda Triggers – S3, API Gateway, CloudWatch Events
+Lambda Environment Variables and Configuration
+Lambda IAM Role – Permissions and Best Practices
+Monitoring Lambda with CloudWatch Logs & Metrics
+Lambda Layers – Reusing Code Across Functions
+Versioning and Aliases in Lambda
+Lambda Destinations – Async Invocation Handling
+Real-World Project: Image Processing Pipeline with Lambda
+ 
+AWS Lambda Roadmap
+Introduction Of AWS Lambda
+Serverless With Lambda
+AWS Lambda Vs EC2 Instance
+Create Your First Lambda Function
+Lambda Blueprints
+Lambda Container Images
+Lambda Execution Role
+Lambda Execute & Validate EC2 Automation
+Lambda Trigger
+Introduction Of Amazon Q
+Amazon Q Developer
+Amazon Q vs ChatGPT
+Lambda + Amazon Q
+AWS Lambda Execution Environment
+Version Control In AWS Lambda
+Aliases In AWS Lambda
+Understanding AWS Lambda Concurrency
+Understanding Reserved Concurrency
+Configure Provisioned Concurrency in Lambda
+Lambda Layers
+Lambda Layers Lab
+Lambda VPC Connectivity
+AWS Step Functions
+Step Function Lab
+AWS Step Function Type
+Class Note For Section 15 - AWS Lambda & Serverless Concepts
+
+API Gateway
+Introduction to Amazon API Gateway
+Creating REST APIs – Step by Step
+Creating HTTP APIs – Overview and Demo
+Integrating API Gateway with Lambda
+API Gateway Request & Response Mapping
+API Gateway Security – IAM, API Keys, and Cognito
+Usage Plans and Throttling in API Gateway
+Custom Domain Names for API Gateway
+Monitoring API Gateway with CloudWatch
+Real-World Project: Serverless Web Application Backend
+ 
+SQS (Simple Queue Service)
+Introduction to Amazon SQS – Overview & Use Cases
+Creating Standard and FIFO Queues
+Sending and Receiving Messages
+Long Polling vs Short Polling
+Dead-Letter Queues (DLQ) Setup
+Queue Policies – Controlling Access
+Message Attributes – Metadata Management
+Integrating SQS with Lambda
+Monitoring SQS Metrics with CloudWatch
+Real-World Project: Decoupled Microservices using SQS
+ 
+SNS (Simple Notification Service)
+Introduction to Amazon SNS – Overview & Use Cases
+Creating Topics and Subscriptions
+Publishing Messages to SNS Topics
+SNS Protocols – Email, SMS, HTTP, Lambda
+Topic Policies – Controlling Access
+Fan-Out Architecture with SNS + SQS
+Message Filtering in SNS
+Monitoring SNS with CloudWatch
+Real-World Project: Event-Driven Notification System
+ 
+CloudWatch
+Introduction to CloudWatch – Metrics, Logs, Alarms
+Creating CloudWatch Alarms for EC2
+Custom Metrics in CloudWatch
+CloudWatch Logs – Creating Log Groups and Streams
+CloudWatch Logs Insights – Querying Logs
+CloudWatch Events – Scheduled and Event-Based Triggers
+CloudWatch Dashboards – Visualizing Metrics
+CloudWatch Agent Installation and Configuration
+Real-World Project: Monitoring Web Application Performance
+ 
+CloudTrail
+Introduction to AWS CloudTrail – Overview & Use Cases
+Creating a CloudTrail Trail
+Monitoring API Activity with CloudTrail
+CloudTrail Event History – Querying & Filtering
+Integrating CloudTrail with CloudWatch Logs
+Multi-Region and Multi-Account CloudTrail Setup
+Real-World Project: Auditing and Compliance with CloudTrail
+ 
+DynamoDB
+Introduction to Amazon DynamoDB – Overview & Use Cases
+Creating a DynamoDB Table
+Partition Keys vs Sort Keys
+DynamoDB Read and Write Capacity Modes – Provisioned vs On-Demand
+Indexes – Global and Local Secondary Indexes
+DynamoDB Streams – Setup and Use Cases
+DynamoDB Transactions – Atomic Operations
+Integrating DynamoDB with Lambda
+Backup and Restore in DynamoDB
+DynamoDB Best Practices and Cost Optimization
+Real-World Project: Serverless Application with DynamoDB
+ 
+RDS (Relational Database Service)
+Introduction to Amazon RDS – Overview & Use Cases
+Creating RDS Instances – MySQL, PostgreSQL, SQL Server
+RDS Storage Types – General Purpose, Provisioned IOPS
+RDS Multi-AZ Deployment – High Availability
+RDS Read Replicas – Performance Scaling
+RDS Security – IAM, VPC, Encryption
+RDS Backups – Automated and Manual
+RDS Monitoring with CloudWatch
+RDS Maintenance and Patching
+Real-World Project: Multi-Tier Application with RDS Backend
+ Databases (RDS & DynamoDB)
+Connect EC2 → RDS
+Demo
+V50
+Databases (RDS & DynamoDB)
+Backups & Snapshots
+Theory
+V51
+
+
+
+Relational Database Service (RDS)
+Introduction Of Database
+What Is Relational Database Services ?
+Why RDS ?
+n-Premises Vs Amazon EC2 Vs Amazon RDS
+AWS Relational Database Service (RDS) Lab
+EC2- RDS Connection Lab
+RDS Availability & Durability Single DB Instance
+RDS Availability & Durability Multi-AZ DB Ins
+RDS Availability & Durability Multi-AZ DB Cluster
+How To Choose Availability Option?
+AWS RDS Setting option
+RDS Setting Option - Credentials Setting
+AWS RDS Instance Configuration
+Storage In RDS
+AWS RDS Connectivity
+AWS RDS Database Authentication
+RDS Monitoring- Performan ce Insights
+RDS Monitoring- Enhanced Monitoring
+RDS Monitoring- CloudWatch
+RDS Monitoring- Performance Insights Vs Enhanced Monitoring Vs CloudWatch
+AWS RDS - DB Parameter Group & Option Group
+RDS Automated Backups & Manual Snapshots
+AWS RDS Encryption
+AWS RDS Log Exports
+AWS RDS Maintenance
+AWS RDS Read Replica
+AWS RDS Readable Standby Instance Vs Read Replica
+AWS RDS Blue/Green Deployment
+RDS Proxy
+RDS Zero-ETL Integration
+ElastiCache Cluster For RDS Part 1
+ElastiCache For RDS Part 2 Cluster Type - Redis & Memcached
+AWS RDS ElastiCache Exam SAA-C03 Cheat Sheet
+AWS RDS Restore Form sg
+Class Note For Section 14 Relation Database Services (RDS)
+Amazon Aurora
+AWS DynamoDB
+NoSQL And DynamoDB
+UPI Case Study II Relational vs Non-Relational Databases
+AWS DynamoDB Core Components
+AWS DynamoDB Table Class
+AWS DynamoDB Storage Architecture
+AWS DynamoDB Read Consistency
+AWS DynamoDB Write Consistency
+AWS DynamoDB - RCCJ Read Capacity Unit
+AWS DynamoDB - WCU Write Capacity Unit
+AWS DynamoDB On-Demand Capacity Mode
+AWS DynamoDB Provisioned Capacity Mode
+AWS DynamoDB Warm Throughput
+AWS Secondary Indexes
+AWS DynamoDB Local Secondary Index (LSI)
+AWS DynamoDB Globle Secondary Index (GSI)
+AWS DynamoDB LSI vs GSI
+DynamoDB Encryption at Rest Explained!
+Master DynamoDB Resource Policies: Essential for AWS Certification
+DynamoDB Global Tables Explained: Replication Made Simple
+Master DynamoDB Global Tables with These Mini Labs
+Must-Know DynamoDB Backup for AWS Exams!
+How To Export sa In DynamoDB ?
+How To Export S3 In DynamoDB ? Part 2 Select Best Exported File Format
+AWS DynamoDB Stream & Trigger
+AWS DynamoDB - Kinesis Data Stream
+Amazon DynamoDB Accelerator (DAX)
+How To Create DAX Cluster ?
+AWS Certified Solutions Architect - Associate SAA-C03 DynamoDB Cheat Sheet
+AWS Database Complete Overview
+Class Note For Section 14 - DynamoDB & AWS Database Services
+
+ElastiCache
+Introduction to Amazon ElastiCache – Overview & Use Cases
+Redis vs Memcached – Differences and Use Cases
+Creating an ElastiCache Cluster
+Configuring Parameter Groups
+Security Groups and Access Control
+Cluster Scaling – Adding / Removing Nodes
+Monitoring ElastiCache with CloudWatch
+Real-World Project: Caching Layer for Web Application
+ 
+
+AWS ECS (Elastic Container Service)
+Introduction to Amazon ECS – Overview & Use Cases
+ECS Cluster – Creating and Managing Clusters
+ECS Task Definitions – Creating and Configuring
+ECS Services – Deploying Tasks as Services
+ECS Launch Types – EC2 vs Fargate
+ECS Container Definitions – CPU, Memory, Environment Variables
+ECS Task Networking – VPC, ENIs, Security Groups
+ECS Service Auto Scaling – Configuration and Policies
+ECS Integration with ALB / NLB
+ECS Monitoring with CloudWatch
+Deploying a Sample Application on ECS
+Real-World Project: Web Application Deployment with ECS + Fargate
+ 
+Amazon ECS Elastic Container Services
+Amazon ECS A New Way To Learn
+Docker Container Overview
+How virtual machine works ?
+What is virtual machine ?
+What are the limitations of virtual machines?
+What Is Container
+Docker FAQ
+What Is Container Orchestration ?
+Docker Swarm vs Amazon ECS vs Kubernetes
+Class Note For Section 16 Elastic Container Services (ECS) - Prerequisites
+Application Architectures
+Amazon ECS Basic
+ECS Cluster
+ECS Infrastructure
+Amazon ECS Anywhere
+ECS Encryption
+ECS Cluster Setup Using Fargate & Fargate Spot
+Add EC2 During Cluster Setup
+Add EC2 Manually After Cluster Creation
+Amazon ECS Task
+Amazon ECS Services
+ECS Project step 1 - Create ECS Cluster
+ECS Project Step 2 - Test Container Image For ECS - Part 2
+ECS Project Step 3 - Understand Amazon ECR Part 1
+ECS Project Step 3 - Create ECR Repository Part 2
+ECS Project step 4 - Authenticate EC2 with AWS & Docker with ECR Part 1
+ECS Project step 5 - ECS Task Definition Part 1
+ECS Project Step 5 - ECS Task Definition Family & Launch Type Part 2
+ECS Project Step 5 - Task definition OS And Architecture Part 3
+ECS Project Step 5 - Network Mode - awsvpc Part 4
+ECS Project Step 5 Bridge Network Mode Part 4.2
+ECS Project Step 5 Default Network Mode Part 4.3
+ECS Project Step 5 Host & None Network Mode Part 4.4
+ECS Project Step 5 How Network Mode Affects ECS Task Definition
+ECS Project step 5 ECS Task Size Part 5
+ECS Project Step 5 Task Role Conditional Vs Task Execution Role Part 6
+ECS Project Step 5 ECS Placement Constraint Part 7
+ECS Project Part 5 Container Configuration Part 8
+ECS Project Step 5 Resource Allocation Limits Part 8.2
+ECS Project Step 5 Environment Variable Part g
+ECS Project step 5 AWS ECS Storage -Fargate Launch Type Pan 10
+ECS Project step 5 AWS ECS Storage -EC2 Launch Type Part 10.2
+ECS Project Step 6 Create Task Definition
+ECS Project step 7 Run ECS Task For Testing
+ECS Project step 8 Create ECS Services Part 8.1
+ECS Project Step 8 Deployment Configuration Options Part 8.2
+ECS Project Step 8 Deployment Option 1 - Rolling Update Part 8.3
+ECS Project Step 8 Deployment Option 2 - Blue/Green Deployment Part 8.3
+ECS Project Step 8 - ECS Services Deployment Failure Detection Part 4
+ECS Project Step 8 - ECS Services - Networking Part 5
+ECS Project Step 8 - ECS Services - Load Balancer Part 6
+ECS Project step 8 - ECS Services - Auto Scaling Part 7
+ECS Project Step 8 - ECS Services Auto Scaling Part 8
+ECS Project Step 8 - Scaling Policies Type - Target Tracking Policy Part 9
+ECS Project Step 8 - Scaling policies Type - Step Scaling Policy Part 10
+ECS Project Step 8 Step Scaling Policy - Scale-Out Policy Part 11
+ECS Project Step 8 Step Scaling Policy - Scale-ln Policy Part 12
+Project Introduction - Deploying Web App On ECS
+Step 1 Build a Secure Network Environment
+Step 2 Configure Security Groups
+step 3 Create ECS cluster
+Step 4 Deploy An Application Load Balancer (ALB)
+Step 5 Verify And Pull Container Images From ECR
+Step 6 Verify ECS Task Definition
+Step 7 Create An ECS Fargate Service
+Step 8 Enable Services Auto Scaling
+Step g Verification Of Services
+Introduction - Amazon Elastic Kubernetes Services (EKS)
+Kubernetes Architecture On-Premises VS EKS Part 1
+Kubernetes Architecture On-Premises VS EKS Part 2
+Cluster Creation Options - Quick Configuration (with EKS Auto Mode)
+
+AWS EKS (Elastic Kubernetes Service)
+Introduction to Amazon EKS – Overview & Use Cases
+EKS Cluster – Creating and Configuring
+EKS Worker Nodes – EC2 vs Fargate Nodes
+EKS Node Groups – Managed vs Self-Managed
+Kubernetes Pods and Deployments in EKS
+EKS Service Networking – VPC, Subnets, Security Groups
+EKS Integration with ALB Ingress Controller
+EKS RBAC – Managing Access with IAM
+Monitoring EKS with CloudWatch Container Insights
+EKS Cluster Autoscaler – Scaling Nodes Automatically
+Deploying Sample Kubernetes Application on EKS
+Real-World Project: CI/CD Pipeline on EKS
+ 
+AWS Route 53
+Introduction to Amazon Route 53 – Overview & Use Cases
+Route 53 Hosted Zones – Creating Public and Private Zones
+Route 53 Record Types – A, AAAA, CNAME, MX, TXT, SRV, Alias
+Routing Policies – Simple, Weighted, Latency, Failover, Geolocation
+Health Checks – Configuring and Monitoring Endpoint Health
+Domain Registration – Buying and Managing Domains
+DNS Failover Setup – High Availability Architecture
+Route 53 Integration with ELB / CloudFront
+Routing Policies Best Practices – Performance and Cost Optimization
+Real-World Project: Multi-Region Website with Route 53 Failover
+Route 53 Part 1
+Route 53 Part 2
+Route 53 Part 3- Records Type (Hands-On)
+Route 53 Part 4 Routing Policy (Hands-On)
+Route 53 Part 5 Hosted Zone Health Check (Hands-On)
+Route 53 Part 6 Geolocation (Hands-On)
+Route 53 Part 7 Latency (Hands-On)
+Route 53 Part 8 Geoproximity Routing (Hands-On)
+Route 53 Part g Failover Routing Policy (Hands-On)
+Route 53 Part 10 Multivalue Answer Routing Policy (Hands-On)
+Route 53 Part 11 IP Based Routing Policy (Hands-On)
+
+CloudFront : - 
+
+Class Note for Section 11 Mastering Simple Storage Service (S3)
+Introduction Of AWS CloudFront Content Delivery Network (CDN)
+AWS CloudFront Hands-On Lab 1
+AWS CloudFront Origin Setting
+Default Cache Behavior Option
+Cloudfront Custom HTTPS
+CloudFront Origin Access
+Cloudfront Allowed HTTP Method
+AWS CloudFront Default Cache Behavior Restrict Viewer Access
+AWS CloudFront Default Cache Behavior- Cache Key And Origin Requests
+AWS CloudFront Default Cache Behavior- Response Header Policy
+AWS CloudFront Function Associations
+AWS CloudFront Setting Options II Supported HTTP Versions & Default Root Object
+AWS CloudFront Setting Options Part 2
+AWS CloudFront Geographic Restrictions
+AWS CloudFront origin Group Lab 1 EC2 & sg Failover
+AWS CloudFront Origin Group Lab 2 Geographical Failover with Load Balancer
+AWS CloudFront Tutorial II AWS CloudFront Error Pages
+AWS CloudFront Cache Invalidation
+Class Note For Section 12 AWS CloudFront: Mastering Content Delivery and Caching
+
+AWS Global Accelerator : - 
+
+AWS Global Accelerator
+Introduction Of AWS Global Accelerator
+Key Features Of AWS Global Accelerator
+AWS Global Accelerator - Multi-Region EC2 Traffic Routing (Hads-On)
+AWS Global Accelerator - Super Lab Introduction
+AWS Global Accelerator- Super Lab Part 1
+AWS Global Accelerator- Super Lab Part 2
+AWS Global Accelerator- Super Lab Part 3
+Class Note For Section 13 AWS Global Accelerator
